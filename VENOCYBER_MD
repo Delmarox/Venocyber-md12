@@ -1,0 +1,7 @@
+FROM quay.io/sampandey001/secktor
+RUN git clone https://github.com/Venoctrl/Venocyber-md /root/Venoctrl
+WORKDIR /root/Venoctrl
+RUN npm install
+EXPOSE 8000
+CMD ["npm","start" ] 
+# POWERD BY VENOCYBER TECH
